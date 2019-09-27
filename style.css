@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(172, 172, 149);
+}
+header{
+    text-align: center;
+}
+.form{
+    background-color: white;
+    margin: auto;
+    border: 1px solid grey;
+    width: 400px;
+    text-align: center;
+}
+form{
+    width: 75%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 40px;
+}
+/* style inside the form */
+form label, form input, button{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+form input{
+    padding: 10px 5px;
+    margin-bottom: 20px;
+}
+/* style the header of form */
+.form-header p{
+    margin-bottom: 0;
+    font-size: 0.9em;
+    
+
+}
+.form-header a{
+    font-size: 0.7em;
+}
+
+/* style the note */
+.note{
+    width: 75%;
+    font-size: 0.7em;
+    font-style: italic;
+    margin: auto;
+}
