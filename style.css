@@ -7,15 +7,39 @@ html, body{
     margin: 0;
 }
 body{
-    background-color: rgb(172, 172, 149);
+    background-color: lightgray;
 }
+/* style for body's parts features*/
 header{
     text-align: center;
+}
+.signIn{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 15px;
+    align-items: center;
+}
+.signIn ul, .signIn button{
+    display: inline;
+    margin: 10px 5px;
+}
+.signIn ul li{
+    list-style: none;
+    font-size: 0.7em;
+}
+#signIn{
+    width: 95px;
+    padding: 7px 0;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 0.8em;
 }
 .form{
     background-color: white;
     margin: auto;
-    border: 1px solid grey;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 2px;
     width: 400px;
     text-align: center;
 }
@@ -39,17 +63,45 @@ form input{
 .form-header p{
     margin-bottom: 0;
     font-size: 0.9em;
-    
-
 }
 .form-header a{
     font-size: 0.7em;
 }
+.password{
+    position: relative;
+}
+.password i{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    font-size: 20px;
+    color: lightgray;
+}
 
+button{
+    padding: 3px;
+    background-color: rgb(76, 176, 238);
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+    font-size: 1em;
+
+    
+}
 /* style the note */
 .note{
     width: 75%;
     font-size: 0.7em;
     font-style: italic;
     margin: auto;
+}
+/* style the footer */
+footer{
+    text-align: center;
+    font-size: 0.7em;
+}
+footer li{
+    list-style: none;
+    display: inline;
 }
