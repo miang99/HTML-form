@@ -1,3 +1,6 @@
+:root{
+    --dark-grey: rgb(65, 63, 63);
+}
 *{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
@@ -7,7 +10,7 @@ html, body{
     margin: 0;
 }
 body{
-    background-color: lightgray;
+    background-color: #ECEEF1;
 }
 /* style for body's parts features*/
 header{
@@ -19,10 +22,14 @@ header{
     justify-content: flex-end;
     margin-right: 15px;
     align-items: center;
+    line-height: 1em;
 }
 .signIn ul, .signIn button{
     display: inline;
     margin: 10px 5px;
+}
+.signIn ul{
+    text-align: right;
 }
 .signIn ul li{
     list-style: none;
@@ -30,10 +37,12 @@ header{
 }
 #signIn{
     width: 95px;
-    padding: 7px 0;
+    padding: 10px 0;
     border-radius: 5px;
     border: 1px solid black;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    background-color: #0077C5;
+    color: white;
 }
 .form{
     background-color: white;
@@ -42,6 +51,7 @@ header{
     border-radius: 2px;
     width: 400px;
     text-align: center;
+    padding-bottom: 15px;
 }
 form{
     width: 75%;
@@ -78,7 +88,7 @@ form input{
     color: lightgray;
 }
 
-button{
+button[type="submit"]{
     padding: 3px;
     background-color: rgb(76, 176, 238);
     border: 1px solid lightgray;
@@ -86,22 +96,31 @@ button{
     color: white;
     font-weight: 500;
     font-size: 1em;
-
-    
 }
 /* style the note */
 .note{
-    width: 75%;
+    width: 70%;
     font-size: 0.7em;
     font-style: italic;
     margin: auto;
+    color: gray;
+    line-height: 2em;
+
 }
 /* style the footer */
 footer{
+    margin-top: 25px;
     text-align: center;
     font-size: 0.7em;
+    color: var(--dark-grey);
+    line-height: 0.9em;
 }
 footer li{
     list-style: none;
     display: inline;
+    margin: 0 5px;
+}
+footer li a{
+    text-decoration: none;
+    color: var(--dark-grey);
 }
